@@ -200,7 +200,7 @@ namespace JsonConvert.Dto
 
         //public List<EmAtSeaEventDto> EventSeaRobs { get; set; }
 
-        //public List<EmInPortEventDto> EventPortRobs { get; set; }
+        public List<EventRobsRowDto> EventRobsRowDtos { get; set; }
 
         //public List<MEEventTypeDto> MeEventTypeRobs { get; set; }
         //public List<ImportFuelChangeoverDto> FuelChangeOver { get; set; }
@@ -264,7 +264,13 @@ namespace JsonConvert.Dto
         public string remaining { get; set; }
 
         public string adjustment { get; set; }
-        
+
+        public string EventType { get; set; }
+        public string Observeddistance { get; set; }
+        public string StartTime { get; set; }
+        public string EndTime { get; set; }
+        public string Remarks { get; set; }
+
     }
 
     //public class ImportFueltypeDto
@@ -298,4 +304,15 @@ namespace JsonConvert.Dto
 
     //    public string Adjustment { get; set; }
     //}
+
+
+    public class EventRobsRowDto
+    {
+        public string EventType { get; set; }
+        public string Observeddistance { get; set; }
+        public DateTimeOffset? StartTime { get; set; }
+        public DateTimeOffset? EndTime { get; set; }
+        public string Remarks { get; set; }
+        public List<ImportRobDto> Robs { get; set; }
+    }
 }
