@@ -235,42 +235,35 @@ namespace JsonConvert.Dto
 
     public class ImportRobDto
     {
-        
-        public string fuelType { get; set; }
-        public string propulsion { get; set; }
-        public string maneuver { get; set; }
-        public string generator { get; set; }
-        public string loaddischarge { get; set; }
-        public string deballast { get; set; }
-        public string idleon { get; set; }
-        public string idleoff { get; set; }
-        public string igs { get; set; }
-        public string cargoheating { get; set; }
-        public string cargoheatingplus { get; set; }
-        public string cargoheatingplusplus { get; set; }
-        public string cooling { get; set; }
-        public string tankCleaning { get; set; }
-        public string others { get; set; }
-        public string pilotflame { get; set; }
-        public string mainEngineConsumption { get; set; }
-        public string auxEngineConsumption { get; set; }
-        public string consumption { get; set; }
-        public string boiler { get; set; }
-        public string incinerator { get; set; }
+        public string FuelType { get; set; }
+        public string Propulsion { get; set; }
+        public string Maneuver { get; set; }
+        public string Generator { get; set; }
+        public string Loaddischarge { get; set; }
+        public string Deballast { get; set; }
+        public string BallastExchange { get; set; }
+        public string Idleon { get; set; }
+        public string Idleoff { get; set; }
+        public string Igs { get; set; }
+        public string Cargoheating { get; set; }
+        public string Cargoheatingplus { get; set; }
+        public string Cargoheatingplusplus { get; set; }
+        public string Cooling { get; set; }
+        public string TankCleaning { get; set; }
+        public string Others { get; set; }
+        public string Pilotflame { get; set; }
+        public string MainEngineConsumption { get; set; }
+        public string AuxEngineConsumption { get; set; }
+        public string Consumption { get; set; }
+        public string Boiler { get; set; }
+        public string Incinerator { get; set; }
+        public string TankOrHoldCleaning { get; set; }
+        public string Robstart { get; set; }
 
-        public string robstart { get; set; }
+        public string Robend { get; set; }
+        public string Remaining { get; set; }
 
-        public string robend { get; set; }
-        public string remaining { get; set; }
-
-        public string adjustment { get; set; }
-
-        public string EventType { get; set; }
-        public string Observeddistance { get; set; }
-        public string StartTime { get; set; }
-        public string EndTime { get; set; }
-        public string Remarks { get; set; }
-
+        public string Adjustment { get; set; }
     }
 
     //public class ImportFueltypeDto
